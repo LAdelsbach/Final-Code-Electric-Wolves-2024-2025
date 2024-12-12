@@ -15,8 +15,8 @@
 15        android:targetSdkVersion="28" />
 16
 17    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-17-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:5-81
-17-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:22-78
+17-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:5-81
+17-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:22-78
 18    <uses-permission
 18-->[org.firstinspires.ftc:Blocks:10.1.1] /Users/lukeadelsbach/.gradle/caches/8.9/transforms/0f72e6bbfc3b58c066a6e7d0a2cd41d6/transformed/Blocks-10.1.1/AndroidManifest.xml:9:5-11:35
 19        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
@@ -188,116 +188,116 @@
 109-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/lukeadelsbach/.gradle/caches/8.9/transforms/a64f50e259a5f46d27790879dabea1b2/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:44:9-33
 110
 111    <application
-111-->/Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/TeamCode/src/main/AndroidManifest.xml:10:5-19
+111-->/Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/TeamCode/src/main/AndroidManifest.xml:10:5-19
 112        android:name="org.firstinspires.ftc.robotcore.internal.system.RobotApplication"
 112-->[org.firstinspires.ftc:RobotCore:10.1.1] /Users/lukeadelsbach/.gradle/caches/8.9/transforms/2abf24930e71deaa38e1e6d49a3c5192/transformed/RobotCore-10.1.1/AndroidManifest.xml:85:18-97
 113        android:allowBackup="true"
-113-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:13:9-35
+113-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:13:9-35
 114        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 114-->[androidx.core:core:1.3.0] /Users/lukeadelsbach/.gradle/caches/8.9/transforms/dd336b1e6aebd9ae7747257ed0e83dfd/transformed/core-1.3.0/AndroidManifest.xml:24:18-86
 115        android:debuggable="true"
 116        android:extractNativeLibs="true"
 117        android:icon="@drawable/ic_launcher"
-117-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:14:9-45
+117-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:14:9-45
 118        android:label="@string/app_name"
-118-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:15:9-41
+118-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:15:9-41
 119        android:largeHeap="true"
-119-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:16:9-33
+119-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:16:9-33
 120        android:theme="@style/AppThemeRedRC"
-120-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:17:9-45
+120-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:17:9-45
 121        android:usesCleartextTraffic="true" > <!-- Indicates to the ControlHubUpdater what the latest version of the Control Hub is that this app supports -->
-121-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:18:9-44
+121-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:18:9-44
 122        <meta-data
-122-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:21:9-23:33
+122-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:21:9-23:33
 123            android:name="org.firstinspires.latestSupportedControlHubVersion"
-123-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:22:13-78
+123-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:22:13-78
 124            android:value="1" /> <!-- The main robot controller activity -->
-124-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:23:13-30
+124-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:23:13-30
 125        <activity
-125-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:26:9-37:20
+125-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:26:9-37:20
 126            android:name="org.firstinspires.ftc.robotcontroller.internal.PermissionValidatorWrapper"
-126-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:27:13-101
+126-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:27:13-101
 127            android:configChanges="orientation|screenSize"
-127-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:28:13-59
+127-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:28:13-59
 128            android:label="@string/app_name"
-128-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:29:13-45
+128-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:29:13-45
 129            android:launchMode="singleTask"
-129-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:30:13-44
+129-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:30:13-44
 130            android:screenOrientation="fullUser" >
-130-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:31:13-49
+130-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:31:13-49
 131            <intent-filter>
-131-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:32:13-36:29
+131-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:32:13-36:29
 132                <category android:name="android.intent.category.LAUNCHER" />
-132-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:33:17-77
-132-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:33:27-74
+132-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:33:17-77
+132-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:33:27-74
 133
 134                <action android:name="android.intent.action.MAIN" />
-134-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:35:17-69
-134-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:35:25-66
+134-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:35:17-69
+134-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:35:25-66
 135            </intent-filter>
 136        </activity>
 137        <activity
-137-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:38:9-56:20
+137-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:38:9-56:20
 138            android:name="org.firstinspires.ftc.robotcontroller.internal.FtcRobotControllerActivity"
-138-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:39:13-101
+138-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:39:13-101
 139            android:configChanges="orientation|screenSize"
-139-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:40:13-59
+139-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:40:13-59
 140            android:label="@string/app_name"
-140-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:41:13-45
+140-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:41:13-45
 141            android:launchMode="singleTask"
-141-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:42:13-44
+141-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:42:13-44
 142            android:screenOrientation="fullUser" >
-142-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:43:13-49
+142-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:43:13-49
 143            <intent-filter>
-143-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:44:13-46:29
+143-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:44:13-46:29
 144                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
-144-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:45:17-90
-144-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:45:25-87
+144-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:45:17-90
+144-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:45:25-87
 145            </intent-filter>
 146
 147            <meta-data
-147-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:48:13-50:57
+147-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:48:13-50:57
 148                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
-148-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:49:17-79
+148-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:49:17-79
 149                android:resource="@xml/device_filter" />
-149-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:50:17-54
+149-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:50:17-54
 150
 151            <!-- org.firstinspires.main.entry indicates that this app is compatible with the Dragonboard Control Hub -->
 152            <meta-data
-152-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:53:13-55:40
+152-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:53:13-55:40
 153                android:name="org.firstinspires.main.entry"
-153-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:54:17-60
+153-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:54:17-60
 154                android:value="true" />
-154-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:55:17-37
+154-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:55:17-37
 155        </activity> <!-- The robot controller service in which most of the robot functionality is managed -->
 156        <service
-156-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:59:9-61:38
+156-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:59:9-61:38
 157            android:name="com.qualcomm.ftccommon.FtcRobotControllerService"
-157-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:60:13-76
+157-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:60:13-76
 158            android:enabled="true" /> <!-- Assistant that autostarts the robot controller on android boot (if it's supposed to) -->
-158-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:61:13-35
+158-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:61:13-35
 159        <receiver
-159-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:64:9-75:20
+159-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:64:9-75:20
 160            android:name="org.firstinspires.ftc.ftccommon.internal.RunOnBoot"
-160-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:65:13-78
+160-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:65:13-78
 161            android:enabled="true"
-161-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:66:13-35
+161-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:66:13-35
 162            android:exported="true"
-162-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:67:13-36
+162-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:67:13-36
 163            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
-163-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:68:13-75
+163-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:68:13-75
 164            <intent-filter>
-164-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:69:13-74:29
+164-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:69:13-74:29
 165                <category android:name="android.intent.category.DEFAULT" />
-165-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:70:17-76
-165-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:70:27-73
+165-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:70:17-76
+165-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:70:27-73
 166
 167                <action android:name="android.intent.action.BOOT_COMPLETED" />
-167-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:72:17-79
-167-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:72:25-76
+167-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:72:17-79
+167-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:72:25-76
 168                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-168-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:73:17-82
-168-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:73:25-79
+168-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:73:17-82
+168-->[:FtcRobotController] /Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/FtcRobotController/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:73:25-79
 169            </intent-filter>
 170        </receiver>
 171

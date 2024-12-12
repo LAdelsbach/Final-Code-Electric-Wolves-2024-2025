@@ -1,14 +1,14 @@
-#Thu Dec 12 12:14:26 PST 2024
-base.0=/Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/10/classes.dex
-base.2=/Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/11/classes.dex
-base.3=/Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/8/classes.dex
-base.4=/Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.5=/Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
-base.6=/Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
-base.7=/Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/3/classes.dex
-base.8=/Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
-base.9=/Users/lukeadelsbach/Desktop/Robotics/TestingThingyPleaseWork/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
+#Thu Dec 12 12:32:55 PST 2024
+base.0=/Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/10/classes.dex
+base.2=/Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/11/classes.dex
+base.3=/Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/8/classes.dex
+base.4=/Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.5=/Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
+base.6=/Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
+base.7=/Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/3/classes.dex
+base.8=/Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+base.9=/Users/lukeadelsbach/Desktop/Final Code Electric Wolves 2024-2025/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
 path.0=classes.dex
 path.1=10/classes.dex
 path.2=11/classes.dex
