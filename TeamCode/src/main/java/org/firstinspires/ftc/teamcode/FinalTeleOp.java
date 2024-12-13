@@ -10,7 +10,7 @@ import com.acmerobotics.dashboard.config.Config;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
 
-@TeleOp(name = "lghjjkghghjk", group = "Iterative Opmode")
+@TeleOp(name = "Current Final TeleOP", group = "Iterative Opmode")
 @Config
 public class FinalTeleOp extends OpMode{
     DcMotor motor_fl;
@@ -38,12 +38,12 @@ public class FinalTeleOp extends OpMode{
     static public double in_rotate_max = 0.9;
     static public double in_claw_min = 0.01;
     static public double in_claw_max = 0.2;
-    static public double h_slide_min = 0.08;
+    static public double h_slide_min = 0.05;
     static public double h_slide_max = 0.3;
 
     //Outake min/max values
 
-    static public double arm_min = 0.07;
+    static public double arm_min = 0.06;
     static public double arm_max = 0.7;
     static public double out_claw_min = 0.05;
     static public double out_claw_max = 0.2;
@@ -158,9 +158,11 @@ public class FinalTeleOp extends OpMode{
             scan_time.reset();
         }
         else if(gamepad2.dpad_down ){//&& transfer_time.time() > transfer_time_max
-
             transfer();
-
+        }
+        else if(gamepad2.dpad_right){
+        transfer_2();
+//    }
         }
         else if(gamepad2.y){
             drop();
@@ -178,55 +180,20 @@ public class FinalTeleOp extends OpMode{
             arm_l.setPosition(arm_min);
             arm_r.setPosition(arm_min);
         }
-
-        if(Math.abs(gamepad2.left_stick_y)>0.05){
+        if(Math.abs(gamepad2.left_stick_y) > 0.01){
             linear_arm_right.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
             linear_arm_left.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
             linear_arm_right.setPower(gamepad2.left_stick_y);
             linear_arm_left.setPower(gamepad2.left_stick_y);
 
         }
-        if(gamepad2.right_bumper && height_time.time()>height_time_max){
-            linear_arm_right.setTargetPosition(linear_arm_max);
-            linear_arm_left.setTargetPosition(linear_arm_max);
-            linear_arm_right.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            linear_arm_left.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            linear_arm_left.setPower(0.7);
-            linear_arm_right.setPower(0.7);
-
-        }
-        else if(gamepad2.left_bumper && height_time.time()>height_time_max){
-            linear_arm_right.setTargetPosition(0);
-            linear_arm_left.setTargetPosition(0);
-            linear_arm_right.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            linear_arm_left.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            linear_arm_left.setPower(-0.7);
-            linear_arm_right.setPower(-0.7);
-
+        else{
+            linear_arm_left.setPower(0);
+            linear_arm_right.setPower(0);
         }
     }
-    public void home(){
-        out_claw_rot.setPosition(out_claw_rot_min);
-        out_claw_r.setPosition(out_claw_max);
-        out_claw_l.setPosition(out_claw_max);
-        arm_l.setPosition(arm_min);
-        arm_r.setPosition(arm_min);
 
-        in_rotate.setPosition(in_rotate_max);
-        h_slide_r.setPosition(h_slide_min);
-        h_slide_l.setPosition(h_slide_min);
-        in_claw.setPosition(in_claw_min);
-    }
-    public boolean homeCheck(){
-        if(Math.abs(in_rotate.getPosition() - in_rotate_min)<0.05){
-            if(Math.abs(((h_slide_l.getPosition()+ h_slide_l.getPosition())/2)- h_slide_min)<0.05){
-                if(Math.abs(arm_l.getPosition() - arm_min)<0.05){
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
+
     private void scan(){
         telemetry.addData("Scanning", 0);
         telemetry.addLine("Scanning");
@@ -238,32 +205,28 @@ public class FinalTeleOp extends OpMode{
 
     }
     private void grab(){
-        telemetry.addData("Grabbing", 0);
+        telemetry.addData("Grabbing", h_slide_l.getPosition());
         telemetry.addLine("Grabbing");
-        if(Math.abs(in_rotate.getPosition()- in_rotate_ready) < 0.05 && Math.abs(out_claw_l.getPosition() - out_claw_min)<0.05){
             in_claw.setPosition(in_claw_max);
             in_rotate.setPosition(in_rotate_min);
             in_claw.setPosition(in_claw_min);
-            out_claw_l.setPosition(out_claw_max);
-            out_claw_r.setPosition(out_claw_max);
 
-        }
 
-        if(Math.abs(in_claw.getPosition()-in_claw_min) < 0.05 && Math.abs(in_rotate.getPosition() - in_rotate_min)<0.05){
-            in_rotate.setPosition(in_rotate_max);
-        }
     }
-    private void pull(){
-        in_rotate.setPosition(in_rotate_max);
-        h_slide_r.setPosition(h_slide_min);
-        h_slide_l.setPosition(h_slide_min);
+    private void transfer_2(){
+
+        out_claw_l.setPosition(out_claw_min);
+        out_claw_r.setPosition(out_claw_min);
+        in_claw.setPosition(in_claw_max);
+        in_rotate.setPosition(in_rotate_ready);
+        arm_l.setPosition(arm_max);
+        arm_r.setPosition(arm_max);
+
     }
     private void transfer(){
-        grab();
         telemetry.addData("Transfering", 0);
         telemetry.addLine("Transfering");
-        if(Math.abs(in_rotate.getPosition()-in_rotate_max)<0.05){
-            transfer_time.reset();
+            in_rotate.setPosition(in_rotate_max);
             in_claw.setPosition(in_claw_min);
             out_claw_rot.setPosition(out_claw_rot_min);
             out_claw_r.setPosition(out_claw_max);
@@ -273,18 +236,13 @@ public class FinalTeleOp extends OpMode{
 
             h_slide_r.setPosition(h_slide_min);
             h_slide_l.setPosition(h_slide_min);
-        }
-        if(Math.abs(h_slide_l.getPosition()-h_slide_min)<0.05){
-            //Actual Transfer
-            out_claw_l.setPosition(out_claw_min);
-            out_claw_r.setPosition(out_claw_min);
-            in_claw.setPosition(in_claw_max);
-        }
-        if(Math.abs(in_claw.getPosition()-in_claw_max)<0.05){
-            arm_l.setPosition(arm_max);
-            arm_r.setPosition(arm_max);
-        }
+
+
     }
+
+
+
+//
     private void drop(){
         telemetry.addData("Dropping", 0);
         telemetry.addLine("Dropping");
