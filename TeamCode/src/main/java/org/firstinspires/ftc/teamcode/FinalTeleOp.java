@@ -153,7 +153,7 @@ public class FinalTeleOp extends OpMode{
     }
     public void game_specific() {
 
-        if(gamepad2.dpad_up && scan_time.time()>scan_time_max){
+        if(gamepad2.dpad_up){
             scan();
             scan_time.reset();
         }

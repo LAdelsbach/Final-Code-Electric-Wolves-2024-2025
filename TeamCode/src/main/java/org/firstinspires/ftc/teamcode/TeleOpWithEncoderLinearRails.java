@@ -126,11 +126,6 @@ public class TeleOpWithEncoderLinearRails extends OpMode{
         double y = -gamepad1.left_stick_y; // Remember, Y stick value is reversed
         double x = gamepad1.left_stick_x; // Counteract imperfect strafing
         double rx = gamepad1.right_stick_x;
-//        if(gamepad1.right_stick_y > 0.05){
-//            rx = gamepad1.right_stick_x;}
-//        else{
-//            rx = 0;
-//        }
         //This if statement is just because sometimes the controller is slightly triggered
         //In that case, if not purposefull, you do not want to go at 95% speed for no reason
         //adjust for imperfect strafing
@@ -151,28 +146,16 @@ public class TeleOpWithEncoderLinearRails extends OpMode{
         motor_br.setPower(backRightPower * speed_factor);
     }
     public void game_specific() {
-
         if(gamepad2.dpad_up){
             scan();
         }
-        else if(gamepad2.dpad_down ){//&& transfer_time.time() > transfer_time_max
+        else if(gamepad2.dpad_left ){//&& transfer_time.time() > transfer_time_max
             transfer();
         }
-        else if(gamepad2.dpad_right){
+        else if(gamepad2.dpad_down){
         transfer_2();
-//    }
         }
-        else if(gamepad2.x){
-            drop();
-        }
-        else if(gamepad2.a){// && grab_time.time()>grab_time_max
-            grab();
-        }
-        else if(gamepad2.b){
-             arm_l.setPosition(arm_max);
-             arm_r.setPosition(arm_max);
-        }
-        else if(gamepad2.y){
+        else if(gamepad2.dpad_right){
             out_claw_r.setPosition(out_claw_max);
             out_claw_l.setPosition(out_claw_max);
             arm_l.setPosition(arm_min);
@@ -184,13 +167,27 @@ public class TeleOpWithEncoderLinearRails extends OpMode{
             linear_arm_left.setPower(0.6);
             linear_arm_right.setPower(0.6);
         }
+        else if(gamepad2.y){
+            drop();
+        }
+        else if(gamepad2.x){
+            arm_l.setPosition(arm_min);
+            arm_r.setPosition(arm_min);
+        }
+        else if(gamepad2.a){// && grab_time.time()>grab_time_max
+            grab();
+        }
+        else if(gamepad2.b){
+             arm_l.setPosition(arm_max);
+             arm_r.setPosition(arm_max);
+        }
+
         if(gamepad2.right_trigger>0.5){
-            if(Math.abs(gamepad2.left_stick_y) > 0.01){
+            if(Math.abs(gamepad2.right_stick_y) > 0.01){
                 linear_arm_right.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
                 linear_arm_left.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-                linear_arm_right.setPower(gamepad2.left_stick_y);
-                linear_arm_left.setPower(gamepad2.left_stick_y);
-
+                linear_arm_right.setPower(gamepad2.right_stick_y);
+                linear_arm_left.setPower(gamepad2.right_stick_y);
             }
             else{
                 linear_arm_left.setPower(0);
@@ -204,7 +201,6 @@ public class TeleOpWithEncoderLinearRails extends OpMode{
             linear_arm_left.setMode(DcMotor.RunMode.RUN_TO_POSITION);
             linear_arm_left.setPower(0.6);
             linear_arm_right.setPower(0.6);
-
         }
         else if(gamepad2.left_bumper){
             linear_arm_left.setTargetPosition(start_position_l+1);
@@ -213,11 +209,8 @@ public class TeleOpWithEncoderLinearRails extends OpMode{
             linear_arm_left.setMode(DcMotor.RunMode.RUN_TO_POSITION);
             linear_arm_left.setPower(0.6);
             linear_arm_right.setPower(0.6);
-
         }
     }
-
-
     private void scan(){
         telemetry.addData("Scanning", 0);
         telemetry.addLine("Scanning");
@@ -225,8 +218,6 @@ public class TeleOpWithEncoderLinearRails extends OpMode{
         h_slide_l.setPosition(h_slide_max);
         in_rotate.setPosition(in_rotate_ready);
         in_claw.setPosition(in_claw_max);
-
-
     }
     private void grab(){
         telemetry.addData("Grabbing", h_slide_l.getPosition());
@@ -234,18 +225,14 @@ public class TeleOpWithEncoderLinearRails extends OpMode{
             in_claw.setPosition(in_claw_max);
             in_rotate.setPosition(in_rotate_min);
             in_claw.setPosition(in_claw_min);
-
-
     }
     private void transfer_2(){
-
         out_claw_l.setPosition(out_claw_min);
         out_claw_r.setPosition(out_claw_min);
         in_claw.setPosition(in_claw_max);
         in_rotate.setPosition(in_rotate_ready);
         arm_l.setPosition(arm_max);
         arm_r.setPosition(arm_max);
-
     }
     private void transfer(){
         telemetry.addData("Transfering", 0);
@@ -260,13 +247,7 @@ public class TeleOpWithEncoderLinearRails extends OpMode{
 
             h_slide_r.setPosition(h_slide_min);
             h_slide_l.setPosition(h_slide_min);
-
-
     }
-
-
-
-//
     private void drop(){
         telemetry.addData("Dropping", 0);
         telemetry.addLine("Dropping");
