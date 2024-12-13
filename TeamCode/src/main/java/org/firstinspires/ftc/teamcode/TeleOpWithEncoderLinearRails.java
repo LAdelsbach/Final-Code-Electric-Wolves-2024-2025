@@ -215,9 +215,6 @@ public class TeleOpWithEncoderLinearRails extends OpMode{
             linear_arm_right.setPower(0.6);
 
         }
-
-
-
     }
 
 

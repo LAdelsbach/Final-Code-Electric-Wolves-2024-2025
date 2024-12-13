@@ -144,7 +144,7 @@ public class FinalTeleOp extends OpMode{
         double backRightPower = (y + x - rx) / denominator;
         double speed_factor = 1;
         if (gamepad1.right_trigger > 0.05) {
-            speed_factor = 1 - (0.8 * gamepad1.right_trigger);
+            speed_factor = 1 - (0.7 * gamepad1.right_trigger);
         }
         motor_fl.setPower(frontLeftPower * speed_factor);
         motor_bl.setPower(backLeftPower * speed_factor);
@@ -164,7 +164,7 @@ public class FinalTeleOp extends OpMode{
         transfer_2();
 //    }
         }
-        else if(gamepad2.y){
+        else if(gamepad2.x){
             drop();
         }
         else if(gamepad2.a){// && grab_time.time()>grab_time_max
@@ -174,7 +174,7 @@ public class FinalTeleOp extends OpMode{
              arm_l.setPosition(arm_max);
              arm_r.setPosition(arm_max);
         }
-        else if(gamepad2.x){
+        else if(gamepad2.y){
             out_claw_r.setPosition(out_claw_max);
             out_claw_l.setPosition(out_claw_max);
             arm_l.setPosition(arm_min);
