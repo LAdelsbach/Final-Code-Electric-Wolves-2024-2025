@@ -66,11 +66,10 @@ public class TeleOpWithEncoderLinearRails extends OpMode{
         motor_br = hardwareMap.dcMotor.get("BR");
 
 
-                linear_arm_left = hardwareMap.dcMotor.get("lal");
+        linear_arm_left = hardwareMap.dcMotor.get("lal");
         linear_arm_right = hardwareMap.dcMotor.get("lar");
 
         linear_arm_left.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        linear_arm_left.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 
         linear_arm_right.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
 
@@ -126,6 +125,10 @@ public class TeleOpWithEncoderLinearRails extends OpMode{
         double y = -gamepad1.left_stick_y; // Remember, Y stick value is reversed
         double x = gamepad1.left_stick_x; // Counteract imperfect strafing
         double rx = gamepad1.right_stick_x;
+        if (gamepad1.left_trigger > 0.05) {
+            y *= -1;
+            x *= -1;
+        }
         //This if statement is just because sometimes the controller is slightly triggered
         //In that case, if not purposefull, you do not want to go at 95% speed for no reason
         //adjust for imperfect strafing
@@ -140,6 +143,7 @@ public class TeleOpWithEncoderLinearRails extends OpMode{
         if (gamepad1.right_trigger > 0.05) {
             speed_factor = 1 - (0.7 * gamepad1.right_trigger);
         }
+
         motor_fl.setPower(frontLeftPower * speed_factor);
         motor_bl.setPower(backLeftPower * speed_factor);
         motor_fr.setPower(frontRightPower * speed_factor);
@@ -160,12 +164,13 @@ public class TeleOpWithEncoderLinearRails extends OpMode{
             out_claw_l.setPosition(out_claw_max);
             arm_l.setPosition(arm_min);
             arm_r.setPosition(arm_min);
-            linear_arm_left.setTargetPosition(start_position_l+1);
-            linear_arm_right.setTargetPosition(start_position_r+1);
-            linear_arm_right.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            linear_arm_left.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            linear_arm_left.setPower(0.6);
-            linear_arm_right.setPower(0.6);
+//            linear_arm_left.setTargetPosition(start_position_l+1);
+//            linear_arm_right.setTargetPosition(start_position_r+1);
+//            linear_arm_right.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+//            linear_arm_left.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+//
+//            linear_arm_left.setPower(0.6);
+//            linear_arm_right.setPower(0.6);
         }
         else if(gamepad2.y){
             drop();
@@ -182,7 +187,6 @@ public class TeleOpWithEncoderLinearRails extends OpMode{
              arm_r.setPosition(arm_max);
         }
 
-        if(gamepad2.right_trigger>0.5){
             if(Math.abs(gamepad2.right_stick_y) > 0.01){
                 linear_arm_right.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
                 linear_arm_left.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
@@ -193,23 +197,23 @@ public class TeleOpWithEncoderLinearRails extends OpMode{
                 linear_arm_left.setPower(0);
                 linear_arm_right.setPower(0);
             }
-        }
-        else if(gamepad2.right_bumper){
-            linear_arm_left.setTargetPosition(linear_arm_max + start_position_l);
-            linear_arm_right.setTargetPosition(linear_arm_max + start_position_r);
-            linear_arm_right.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            linear_arm_left.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            linear_arm_left.setPower(0.6);
-            linear_arm_right.setPower(0.6);
-        }
-        else if(gamepad2.left_bumper){
-            linear_arm_left.setTargetPosition(start_position_l+1);
-            linear_arm_right.setTargetPosition(start_position_r+1);
-            linear_arm_right.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            linear_arm_left.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            linear_arm_left.setPower(0.6);
-            linear_arm_right.setPower(0.6);
-        }
+
+//        else if(gamepad2.right_bumper){
+//            linear_arm_left.setTargetPosition(linear_arm_max + start_position_l);
+//            linear_arm_right.setTargetPosition(linear_arm_max + start_position_r);
+//            linear_arm_right.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+//            linear_arm_left.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+//            linear_arm_left.setPower(0.6);
+//            linear_arm_right.setPower(0.6);
+//        }
+//        else if(gamepad2.left_bumper){
+//            linear_arm_left.setTargetPosition(start_position_l+1);
+//            linear_arm_right.setTargetPosition(start_position_r+1);
+//            linear_arm_right.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+//            linear_arm_left.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+//            linear_arm_left.setPower(0.6);
+//            linear_arm_right.setPower(0.6);
+//        }
     }
     private void scan(){
         telemetry.addData("Scanning", 0);
