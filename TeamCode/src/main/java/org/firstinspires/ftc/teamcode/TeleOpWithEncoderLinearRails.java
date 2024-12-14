@@ -9,7 +9,7 @@ import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
 
-@TeleOp(name = "Current Final TeleOP", group = "Iterative Opmode")
+@TeleOp(name = "Current Final TeleOP**REal actuall", group = "Iterative Opmode")
 @Config
 public class TeleOpWithEncoderLinearRails extends OpMode{
     DcMotor motor_fl;
@@ -32,10 +32,10 @@ public class TeleOpWithEncoderLinearRails extends OpMode{
 
 
     //Intake min/max values
-    static public double in_rotate_min = 0.1;
+    static public double in_rotate_min = 0.12;
     static public double in_rotate_ready = 0.23;
     static public double in_rotate_max = 0.9;
-    static public double in_claw_min = 0.01;
+    static public double in_claw_min = 0.00;
     static public double in_claw_max = 0.2;
     static public double h_slide_min = 0.05;
     static public double h_slide_max = 0.3;
